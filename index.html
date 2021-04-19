@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Instagram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="styles/header.css"/>
+    <template id="post-template">
+      <div class="post">
+        <div class="accountName-container">
+          <img class="post-profile-picture profile-picture" alt="profile" src="images/profile.jpg">
+          <div class="accountName-text">
+            <p class="username">dani_283</p>
+            <p class="location"></p>
+          </div>
+        </div>
+        <div class="picture-container">
+          <img class="post-picture" alt="" src="">
+        </div>
+        <div class="interact-container">
+          <div class="post-icon-container">
+            <div class="icons-left">
+              <i class="far fa-heart heart-icon clickable-icon"></i>
+              <i class="far fa-comment comment-icon clickable-icon"></i>
+              <i class="fas fa-share share-icon"></i>
+            </div>
+            <div class="icons-right">
+              <i class="far fa-bookmark clickable-icon bookmark-icon"></i>
+            </div>
+            </div>
+              <div class="post-liked">
+                <p>Likes:</p>
+                <p>0</p>
+              </div>
+          <div class="hashtag-container">
+            <p></p>
+          </div>
+          <div class="comment-container">
+            <div class="comment-input-container">
+              <form>
+                <input class="comment-input" type="text" name="fname" placeholder="Comment..."><br>
+                <input type="submit" style="display: none" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+    <template id="comment-template">
+      <div class="comment">
+          <p class="comment-user"></p>
+          <p class="comment-text"></p>
+      </div>
+     </template>
+  </head>
+  <body>
+    <header>
+      <div id="header-content">
+        <div id="label">
+          <i class="fab fa-instagram instagram-icon"></i>
+          <p id="vertical-line">|</p>  
+          Instagram
+        </div>
+        <div id="search-container">
+            <i class="fas fa-search search-icon clickable-icon"></i>
+            <input type="text" id="search-box" placeholder="Search"/>
+        </div>
+        <div id="header-icon-container">
+          <i class="far fa-compass compass-icon"></i>
+          <i class="far fa-heart heart-icon clickable-icon"></i>
+          <i class="far fa-user user-icon clickable-icon"></i>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <div id="main-content-container">
+        <div id="post-container">
+          <div id="add-button-container" class="clickable-icon">
+            <div id="add-button-picture-container">
+              <img class="add-button-picture profile-picture" alt="profile" src="images/profile.jpg">
+            </div>
+            <p>Upload</p> 
+          </div>
+          
+          <div class="post">
+              <div class="accountName-container">
+                <img class="post-profile-picture profile-picture" alt="profile" src="images/profile.jpg">
+                <div class="accountName-text">
+                  <p class="username">dani_283</p>
+                  <p class="location">Dubrovnik</p>
+                </div>
+              </div>
+              <div class="picture-container">
+                <div id="upper-container">
+                  <img class="upper-picture" alt="post-picture" src="images/kh3.png">
+                </div>
+                <div id="lower-container">
+                  <div id="lower-left-container">
+                    <img class="lower-left-picture" alt="post-picture" src="images/kh1.jpg">
+                  </div>
+                  <div id="lower-right-container">
+                    <img class="lower-right-picture" alt="post-picture" src="images/kh2.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="interact-container">
+                <div class="post-icon-container">
+                  <div class="icons-left">
+                    <i class="far fa-heart heart-icon clickable-icon"></i>
+                    <i class="far fa-comment comment-icon clickable-icon"></i>
+                    <i class="fas fa-share share-icon"></i>
+                  </div>
+                  <div class="icons-right">
+                    <i class="far fa-bookmark bookmark-icon clickable-icon"></i>
+                  </div>
+                </div>
+                <div class="post-liked">
+                  <p>Likes: </p>
+                  <p>13</p>
+                </div>
+                <div id="caption-container">
+                <p>Opis novo dodane slike</p> 
+                </div>
+                <div class="hashtag-container">
+                  <p>#journey</p>
+                </div>
+                <div class="comment-container">
+                  <div class="comment">
+                    <p class="comment-user">ivan</p>
+                    <p class="comment-text">Predobro</p>
+                  </div>
+                  <div class="comment">
+                    <p class="comment-user">pero</p>
+                    <p class="comment-text">Predobro2</p>
+                  </div>
+                  <div class="comment">
+                    <p class="comment-user">luka</p>
+                    <p class="comment-text">Predobro3</p>
+                  </div>
+                  <div class="comment-input-container">
+                    <form>
+                      <input class="comment-input" type="text" name="fname" placeholder="Comment..."><br>
+                      <input type="submit" style="display: none" />
+                    </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="post">
+            <div class="accountName-container">
+              <img class="post-profile-picture profile-picture" alt="profile" src="images/profile.jpg">
+              <div class="accountName-text">
+                <p class="username">dani_283</p>
+                <p class="location">Dubrovnik</p>
+              </div>
+            </div>
+            <div class="picture-container">
+              <img class="post-picture" alt="post-picture" src="images/kh3_title.jpg">
+            </div>
+            <div class="interact-container">
+              <div class="post-icon-container">
+                <div class="icons-left">
+                  <i class="far fa-heart heart-icon clickable-icon"></i>
+                  <i class="far fa-comment comment-icon clickable-icon"></i>
+                  <i class="fas fa-share share-icon"></i>
+                </div>
+                <div class="icons-right">
+                  <i class="far fa-bookmark bookmark-icon clickable-icon"></i>
+                </div>
+              </div>
+              <div class="post-liked">
+                <p>Likes: </p>
+                <p>13</p>
+              </div>
+              <div class="hashtag-container">
+                <p>#domaci</p>
+              </div>
+              <div class="comment-container">
+                <div class="comment">
+                  <p class="comment-user">ivan</p>
+                  <p class="comment-text">Bomba</p>
+                </div>
+                <div class="comment">
+                  <p class="comment-user">karlo</p>
+                  <p class="comment-text">Predobrooo</p>
+                </div>
+                <div class="comment-input-container">
+                  <form>
+                    <input class="comment-input" type="text" name="fname" placeholder="Comment..."><br>
+                    <input type="submit" style="display: none" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+          <div id="post-container-suggested">
+            <p>Suggested for you:</p>
+            <div id="suggested-left-users-container">
+            <div class="user-container suggested-left-user">
+                <i class="fas fa-times delete-button clickable-icon"></i>
+                <div class="user-profile suggested-left-profile">
+                  <div class="user-profile-picture suggested-left-profile-picture">
+                      <img class="user-picture" alt="user1" src="images/ymx.jpg">
+                  </div>
+                  <p>user1</p>
+                </div>
+                <div class="user-follow-button user-follow-left">
+                  <button class="clickable-icon clickable-follow">follow</button>
+                </div>
+              </div>
+              <div class="user-container suggested-left-user">
+                <i class="fas fa-times delete-button clickable-icon"></i>
+                <div class="user-profile suggested-left-profile">
+                  <div class="user-profile-picture suggested-left-profile-picture">
+                    <img class="user-picture" alt="user2" src="images/aqua.jpg">
+                  </div>
+                  <p>user2</p>
+                </div>
+                <div class="user-follow-button user-follow-left">
+                  <button class="clickable-icon clickable-follow">follow</button>
+                </div>
+              </div>
+              <div class="user-container suggested-left-user">
+                <i class="fas fa-times delete-button clickable-icon "></i>
+                <div class="user-profile suggested-left-profile">
+                  <div class="user-profile-picture suggested-left-profile-picture">
+                    <img class="user-picture" alt="user3" src="images/roxas.jpg">
+                  </div>
+                  <p>user3</p>
+                </div>
+                <div class="user-follow-button user-follow-left">
+                  <button class="clickable-icon clickable-follow">follow</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="post">
+              <div class="accountName-container">
+                <img class="post-profile-picture profile-picture" alt="profile" src="images/aqua.jpg">
+                <div class="accountName-text">
+                    <p class="username">user2</p>
+                  <p class="location">nature</p>
+                </div>
+              </div>
+              <div class="picture-container">
+                <img class="post-picture" alt="post-picture" src="images/nature.jpg">
+              </div>
+              <div class="interact-container">
+                <div class="post-icon-container">
+                  <div class="icons-left">
+                    <i class="far fa-heart heart-icon clickable-icon"></i>
+                    <i class="far fa-comment comment-icon clickable-icon"></i>
+                    <i class="fas fa-share share-icon"></i>
+                  </div>
+                  <div class="icons-right">
+                      <i class="far fa-bookmark bookmark-icon clickable-icon"></i>
+                  </div>
+  
+                </div>
+                <div class="post-liked">
+                  <p>Likes: </p>
+                  <p>111</p>
+                </div>
+                <div class="hashtag-container">
+                  <p>#domaci</p>
+                </div>
+                <div class="comment-container">
+                  <div class="comment">
+                    <p class="comment-user">maja</p>
+                    <p class="comment-text">Predobro3</p>
+                  </div>
+                  <div class="comment-input-container">
+                  <form>
+                    <input class="comment-input" type="text" name="fname" placeholder="Comment..."><br>
+                    <input type="submit" style="display: none" />
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="post">
+                <div class="accountName-container">
+                  <img class="post-profile-picture profile-picture" alt="profile" src="images/roxas.jpg">
+                  <div class="accountName-text">
+                    <p class="username">user3</p>
+                    <p class="location">nature</p>
+                  </div>
+                </div>
+                <div class="picture-container">
+                  <img class="post-picture" alt="post-picture" src="images/nature2.jpg">
+                </div>
+                <div class="interact-container">
+                  <div class="post-icon-container">
+                    <div class="icons-left">
+                      <i class="far fa-heart heart-icon clickable-icon"></i>
+                      <i class="far fa-comment comment-icon clickable-icon"></i>
+                      <i class="fas fa-share share-icon"></i>
+                    </div>
+                    <div class="icons-right">
+                        <i class="far fa-bookmark bookmark-icon  clickable-icon"></i>
+                    </div>
+                  </div>
+                  <div class="post-liked">
+                    <p>Likes:</p>
+                    <p>100</p>
+                  </div>
+                  <div class="hashtag-container">
+                    <p>#nature</p>
+                  </div>
+                  <div class="comment-container">
+                    <div class="comment">
+                      <p class="comment-user">marko</p>
+                      <p class="comment-text">Predobro3</p>
+                    </div>
+                    <div class="comment-input-container">
+                    <form>
+                      <input class="comment-input" type="text" name="fname" placeholder="Comment..."><br>
+                      <input type="submit" style="display: none" />
+                    </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+          
+        <div id="info-container">
+          <div id="profile-info-container">
+            <div id="info-profile-picture-container">
+              <img class="info-profile-picture profile-picture" alt="info-profile-picture" src="images/profile.jpg">
+            </div>
+            <div id="profile-name">
+              <p>dani_283</p>
+              <p> Đani Machiedo</p>
+            </div>
+          </div>
+          <div id="user-info-container">
+            <p id="about-me">About me:</p>
+            <div id="following-container">
+              <p>Following:</p>
+              <div id="following-num">85</div>
+            </div>
+            <div id="likes-container">
+              <p>Likes:</p>
+              <div id="likes-num">193</div>
+            </div>
+            <div id="bookmarks-container">
+              <p>Bookmarks:</p>
+              <div id="bookmarks-num">23</div>
+            </div>
+          </div>
+
+          <div id="info-container-suggested">
+            <p id="suggested">Suggested:</p>
+            <div class="user-container suggested-right-user">
+              <div class="user-profile  suggested-right-profile">
+                <div class="user-profile-picture suggested-right-profile-picture">
+                    <img class="user-picture" alt="user1" src="images/ymx.jpg">
+                </div>
+                <p>user1</p>
+              </div>
+              <div class="user-follow-button user-follow-right clickable-icon">
+              <p>follow</p> 
+              </div>
+            </div>
+            
+            <div class="user-container suggested-right-user">
+              <div class="user-profile suggested-right-profile">
+                <div class="user-profile-picture suggested-right-profile-picture">
+                  <img class="user-picture" alt="user2" src="images/aqua.jpg">
+                </div>
+                <p>user2</p>
+              </div>
+              <div class="user-follow-button user-follow-right clickable-icon">
+              <p>follow</p>
+              </div>
+            </div>
+            <div class="user-container suggested-right-user">
+              <div class="user-profile suggested-right-profile">
+                <div class="user-profile-picture suggested-right-profile-picture">
+                  <img class="user-picture" alt="user3" src="images/roxas.jpg">
+                </div>
+                <p>user3</p>
+              </div>
+              <div class="user-follow-button user-follow-right clickable-icon">
+              <p>follow</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="scripts/posts.js"></script>
+    <script src="scripts/header.js"></script>
+  </body>
+</html>
