@@ -9,5 +9,6 @@ Desktop view
 
 Mobile view
 
-![inst-mobile](https://user-images.githubusercontent.com/82828211/117151222-28ccd680-adb9-11eb-8d06-abc1ad8df126.png=375x666)
+![inst-moile](https://user-images.githubusercontent.com/82828211/117152066-f4a5e580-adb9-11eb-803a-a26f2e365615.png)
+
 
